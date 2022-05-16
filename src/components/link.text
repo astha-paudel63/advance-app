@@ -1,0 +1,19 @@
+http://167.71.226.245:3005/api/vendors/verified = manage vendor
+http://167.71.226.245:3005/api/products/nonverified = products
+http://167.71.226.245:3005/api/vendors/nonverified = vendor
+http://167.71.226.245:3005/api/products/verified =manage products
+vendor
+http://167.71.226.245:3005/api/products/byvendor/62624e309b897310a8ebe53e = products
+http://167.71.226.245:3005/api/vendors/ = setting(error) 
+
+Request URL: http://167.71.226.245:3005/api/vendors/signup
+Request Method: POST
+
+{fullName: "Molestias lorem quia", shopName: "Hic animi et expedi", email: "muhal@mailinator.com",…}
+contactNo: "+1 (176) 876-3095"
+email: "muhal@mailinator.com"
+fullName: "Molestias lorem quia"
+shopContactNo: "+1 (781) 444-5171"
+shopEmail: "sizuh@mailinator.com"
+shopName: "Hic animi et expedi"
+shopVatNo: "66"
