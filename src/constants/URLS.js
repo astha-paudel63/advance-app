@@ -12,3 +12,4 @@ export const SETTINGS = '/settings';
 
 export const ORDERS = '/orders';
 export const PRODUCTS = '/products'; 
+export const ADD_PRODUCT = '/products/add'; 

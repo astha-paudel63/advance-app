@@ -8,6 +8,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import NotFoundPage from "./pages/NotFoundPage";
 import Vendor from "./pages/admin/Vendor";
 import Products from "./pages/admin/Products";
+import VendorProducts from "./pages/vendors/Products";
 import ManageProducts from "./pages/admin/ManageProducts";
 import ManageVendor from "./pages/admin/ManageVendor";
 
@@ -18,6 +19,7 @@ import Register1 from "./pages/Register1";
 
 import RegisterFormik from "./pages/RegisterFormik";
 import * as PATHS from './constants/URLS';
+import AddProducts from "./pages/vendors/Addproducts";
 
 function App() {
 // const {data:user}= useContext(Context);
@@ -35,6 +37,9 @@ console.log(user);
           <Route path={PATHS.PRODUCT_REQUESTS} element={<Products />}/>
           <Route path={PATHS.MANGAE_VENDORS} element={<ManageVendor/>} />
           <Route path={PATHS.MANGAE_PRODUCTS} element={<ManageProducts/>}/>
+          <Route path={PATHS.PRODUCTS} element={<VendorProducts/>}/>
+          <Route path={PATHS.ADD_PRODUCT} element={<AddProducts/>}/>
+        
           {/* <Route path="dashboard" element={<NotFoundPage />} />
           <Route path="settings" element={<NotFoundPage />} /> */}
         </Route>}
