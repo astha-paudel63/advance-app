@@ -44,14 +44,16 @@ const Addproduct = styled.div`
       font-size: 1.1rem;
       font-weight: 600;
       text-transform: uppercase;
-      background-color: #0d6efd;
+      background-color: #4b393c;
       border: none;
-      padding: 10px 50px;
+      padding: 10px 25px;
       margin: 0 10px 0 0;
+      border-radius:8px;
       cursor: pointer;
       transition: all 0.3s;
       &:hover {
-        background-color: #0d6dfdd5;
+        background-color:#4b393c73;
+        color: black;
       }
     }
   }
@@ -109,7 +111,7 @@ const AddProducts = () => {
                       alt={thumbnail.name}
                     />
                   ) : (
-                    <BsFillImageFill size={80} color={"green"} />
+                    <BsFillImageFill size={80} color={"#4b393c"} />
                   )}
                   {thumbnail && (
                     <TiDelete
@@ -141,7 +143,7 @@ const AddProducts = () => {
                       <TiDelete
                         className="remove"
                         onClick={(e) => {
-                                e.stopPropagation();
+                            e.stopPropagation();
                             setImages(images.filter(x => x.path !== i.path))
                         }
                         }
@@ -152,7 +154,7 @@ const AddProducts = () => {
                   </div>
                 ))}
                 {images.length < 4 && <div className="dropzone">
-                  <BsFillImageFill size={80} color={"green"} />
+                  <BsFillImageFill size={80} color={"#4b393c"} />
                 </div>}
                 </div>
 

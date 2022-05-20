@@ -20,9 +20,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  border: 5px solid #b26f7da3;
   width: ${(props) => (props.expanded ? "20%" : "10%")};
-  height: ${(props) => (props.stretch ? "20%" : "10%")};
+  /* height: ${(props) => (props.stretch ? "20%" : "10%")}; */
   .link {
     text-decoration: none;
     margin: 10px 0;
@@ -49,7 +48,7 @@ const Container = styled.div`
     align-items: center;
   }
   .sidebar {
-    background-color: ${ props => props.isAdmin ? '#9f56777a': 'green'};
+    background-color: ${ props => props.isAdmin ? '#9f56777a': '#7a4e55a3'};
     height: 100vh;
   }
   .side-item {

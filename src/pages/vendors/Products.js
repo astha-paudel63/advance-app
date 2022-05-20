@@ -44,6 +44,20 @@ const Productcontainer = styled.div`
   .contact {
     flex-basis: 25%;
   }
+  
+}
+.add-product h2{
+  background-color: #cab5c3;
+  color: black;
+  border: 2px solid #97767c;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.add-product h2:hover, h2:active {
+  background-color: #4b393c;
+  color: white;
 }
 `;
 
@@ -111,9 +125,11 @@ const tableData = useMemo(() => products);
           
         </div>
       ))} */}
+      <div className="add-product" >
       <Link to={PATHS.ADD_PRODUCT}>
-        ADD PRODUCT
+        <h2>ADD PRODUCT</h2>
       </Link>
+      </div>
       <Styles>
         <Table columns={columns} data={tableData} />
       </Styles>

@@ -3,6 +3,8 @@ import { RiShoppingBagLine } from "react-icons/ri";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlineSetting } from "react-icons/ai";
 import { MdOutlineSell } from "react-icons/md";
+import { BsCart3 } from "react-icons/bs";
+import {MdProductionQuantityLimits} from "react-icons/md";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 
 import * as PATHS from './URLS';
@@ -55,16 +57,16 @@ export const VENDOR_PAGES = [
    {
       title: 'Orders',
       path: PATHS.ORDERS,
-      icons : (props) => <RiDashboardLine {...props}/>
+      icons : (props) => <BsCart3 {...props}/>
    },
    {
       title: 'Products',
       path: PATHS.PRODUCTS,
-      icons : (props) => <RiDashboardLine {...props}/>
+      icons : (props) => <MdProductionQuantityLimits {...props}/>
    },
    {
       title: 'Settings',
       path: PATHS.SETTINGS,
-      icons : (props) => <RiDashboardLine {...props}/>
+      icons : (props) => <AiOutlineSetting {...props}/>
    },
 ]
